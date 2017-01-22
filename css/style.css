@@ -7,21 +7,25 @@ body {
     background-color: white;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-.styling a {
-  font-family: 'Alegreya', serif;
-  font-size: 18px;
-  color: dodgerblue;
-}
-
 .navbar.navbar-default {
     background-color: white;
     border: none;
     padding: 20px;
 }    
+
+.container-fluid .navbar-header {
+    padding-left: 85px;
+}   
+
+.collapse.navbar-collapse {
+    padding-right: 145px;
+}   
+
+.collapse.navbar-collapse a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: dodgerblue;
+}   
 
 .news2 {
     background: #173493 url(../img/enchant-your-guests.jpg) top left /1277px 390px no-repeat scroll;
@@ -34,7 +38,7 @@ a:hover {
 .news2 h1 {
     font-family: 'Alegreya', serif;
     letter-spacing: 2px;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px 4px black;
     font-size: 68px;
     font-weight: bold;
     color: white;
@@ -49,7 +53,7 @@ a:hover {
 
 .news2 h2 {
     font-family: 'Alegreya', serif;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px 2px black;
     font-size: 38px;
     color: white;
     text-align: center;
@@ -75,7 +79,7 @@ a:hover {
 
 .wraper2 {
     line-height: 90%;
-    margin-right: 100px;
+    margin-right: 70px;
     text-align: center;
 }  
  
@@ -83,24 +87,32 @@ a:hover {
 button.thebutton {
     font-family: 'Alegreya', serif;
     background-color: #3B6A04;
-    text-shadow: 1.4px 1.4px black;
     height: 60px;
-    border-radius: 8px;
+    border-radius: 6px;
     border: none;
-    font-size: 28px;
+    font-size: 27px;
     font-weight: bold;
     color: white;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 } 
 
 a {
     text-decoration: none;
 }  
 
+.thebutton a {
+    text-decoration: none;
+    color: white;
+}  
+
+.thebutton a:hover {
+    text-decoration: none;
+    color: white;
+}  
+
 .wraper {
     display: flex;
-    margin-left: 290px;
+    margin-left: 275px;
     margin-top: 25px;
 }
 
@@ -120,6 +132,11 @@ a {
 
 .image1 img {
     position: absolute;
+    transition: 0.4s ease;
+}
+
+.image1 img:hover {
+    transform: scale(1.02);
 }
 
 .inside {
