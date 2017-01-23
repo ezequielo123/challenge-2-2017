@@ -148,7 +148,7 @@ a {
     margin-top: 230px;
 }
 
-.inside p {
+.pictures .inside > p {
     position: absolute;
     color: white;
     font-size: 26px;

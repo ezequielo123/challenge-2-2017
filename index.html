@@ -8,6 +8,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -62,8 +66,8 @@
             <div class="image1">
                 <img src="img/romance.jpg" alt="Romance" />
                 <div class="inside">
-                    <p>Romance for two</p>
-                </div>    
+                <p>Romance for two</p>
+            </div>    
             </div>  
             <div class="image1">
                 <img src="img/visitors.jpg" alt="Visitors" />
@@ -100,7 +104,7 @@
         </div> 
     </div>  
 
-    <div class="news3" id="about">   
+    <div class="news3" id="about" class="about">   
         <h1>Delivery of premade packages for your visitors</h1>
         <div class="allfooters">
             <div class="foottext">
@@ -117,6 +121,23 @@
             </div>
         </div>   
     </div>   
+
+    <script>
+        $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top
+            }, 1000);
+            return false;
+            }
+            }
+            });
+        });
+    </script>
 </body>
 
 </html>
